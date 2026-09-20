@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Jennifer Brandt, LCSW-R</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="hero" style="background-image: url('images/autumn-279408_1920.webp'); height: 260px;">
+  <nav class="navbar">
+    <div class="nav-brand">JENNIFER BRANDT, LCSW-R</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="approach.html">My Approach</a>
+        <ul class="dropdown">
+          <li><a href="approach.html#understanding">Understanding</a></li>
+          <li><a href="approach.html#transitions">Transitions</a></li>
+          <li><a href="approach.html#process">Process</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="perspectives.html">New Perspectives</a></li>
+      <li class="nav-contact current"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <div class="container contact-container">
+    <p>An initial consultation gives us a starting place to see how working together feels.</p>
+    <p>I accept all insurances that have out-of-network benefits.</p>
+    <p>You can call me directly to schedule an appointment at either of my offices&mdash;Forest Hills or Brooklyn. Or, fill out the form below and I'll follow up with you. I look forward to speaking with you.</p>
+
+    <div class="contact-info">
+      <p>Jennifer Brandt, LCSW-R</p>
+      <p>410.422.7299</p>
+    </div>
+
+    <form id="contact-form">
+      <div class="field">
+        <label>Name</label>
+        <div class="form-row">
+          <div>
+            <label for="first-name">First Name <span class="req">(required)</span></label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div>
+            <label for="last-name">Last Name <span class="req">(required)</span></label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone <span class="req">(required)</span></label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <div class="field">
+        <label for="message">Message <span class="req">(required)</span></label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button type="submit" class="submit">Submit</button>
+      <p class="form-status" id="form-status" style="display:none;">Thank you &mdash; your message has been sent.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Jennifer Brandt, LCSW-R &nbsp;|&nbsp; 410.422.7299</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
